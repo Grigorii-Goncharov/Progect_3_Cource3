@@ -16,7 +16,7 @@ def insert_employers(vacancies):
             employer = vac.get('employer')
 
             if not employer or 'id' not in employer:
-                print("❌ Пропущена запись: нет данных о работодателе")
+                print(" Пропущена запись: нет данных о работодателе")
                 continue
 
             employer_id = employer['id']
