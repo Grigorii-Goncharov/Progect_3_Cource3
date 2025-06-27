@@ -1,10 +1,12 @@
 import requests
 from config import USER_AGENT
 import os
+import json
+from pprint import pprint
 
 # Получаем путь к текущему скрипту
 script_dir = os.path.dirname(os.path.abspath(__file__))
-path_to_json = os.path.join(script_dir, "../data/vacancy_hh.json")
+path_to_json = os.path.join(script_dir, "../data/hh_vacancy_from_api.json")
 os.makedirs(os.path.dirname(path_to_json), exist_ok=True)
 
 
@@ -65,10 +67,71 @@ def loader_vacancies(id_company):
         except requests.RequestException as e:
             print(f"Ошибка при загрузке вакансий для {employer_id}: {e}")
 
+        # запись в JSON
+        with open(path_to_json, 'w', encoding='utf-8') as file:
+            json.dump(all_vacancies, file, ensure_ascii=False, indent=4)
+
     return all_vacancies
 
 
-if __name__ == '__main__':
-    user_input = input("Введите список компании(например: Яндекс, Сбер...): ").lower()
-    company_id =load_company(user_input)
-    all_vacancies = loader_vacancies(company_id)
+def loader_vacancies_top_10(id_list):
+    '''Получение вакансий из списка ID компаний'''
+    all_vacancies = []
+    url = "https://api.hh.ru/vacancies"  # один раз, так как URL не меняется
+    headers = {"User-Agent": USER_AGENT}
+
+    for item in id_list:
+        params = {"employer_id": item, "per_page": 100}
+
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=5)
+            response.raise_for_status()
+            data = response.json()
+            all_vacancies.extend(data.get("items", []))
+
+        except requests.RequestException as e:
+            print(f"Ошибка при загрузке вакансий для {item}: {e}")
+
+    with open(path_to_json, 'w', encoding='utf-8') as file:
+        json.dump(all_vacancies, file, ensure_ascii=False, indent=4)
+
+    return all_vacancies
+
+
+def get_company_name(loader_company):
+    '''ДОП ФУНКЦИЯ (нужно передавать по одному ID компании) Вывод названий компаний по ID'''
+    url = f"https://api.hh.ru/employers/{loader_company}"
+    headers = {"User-Agent": USER_AGENT}
+
+    try:
+        response = requests.get(url, headers=headers, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        return data["name"]
+    except (requests.RequestException, KeyError):
+        return "Неизвестная компания"
+
+
+employer_id_top = [
+            '122108038',  # ТБАНК ВЛГД✅
+            '87021',    # WB ✅
+            '4592004',  # Вкусвилл ✅
+            '11811833',   # ЕЦТ ✅
+            '122045007',  # Edplace ✅
+            '122127192', # ОАО Волжский абразивный завод ✅
+            '121890188',   # ИНТЕРВОЛГА ✅
+            '9498112',  # Яндекс Крауд ✅
+            '122083236', # ОЗОН ✅
+            '887248',  # ООО Инжиниринговый Центр РЕГИОНАЛЬНЫЕ СИСТЕМЫ ✅
+        ]
+
+# if __name__ == '__main__':
+#     user_input = input("Введите список компании(например: Яндекс, Сбер...): ").lower()
+#     company_id =load_company(user_input)
+#     all_vacancies = loader_vacancies(company_id)
+#
+#     all_vacancies2=loader_vacancies_top_10(employer_id_top)
+    # for employer_id in employer_id_top:
+    #     res = get_company_name(employer_id)
+    #
+    #     pprint(f'{employer_id} - ID компании {res}')
