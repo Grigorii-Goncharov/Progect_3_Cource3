@@ -38,6 +38,37 @@ def load_company(companies_list_input: str):
     return employer_id
 
 
+def loader_vacancies(id_company):
+    '''Нахождение вакансий от работодателей из списка вакансий по ID работодателя'''
+    url = "https://api.hh.ru/vacancies"
+    headers = {'User-Agent': USER_AGENT}
+    all_vacancies = []
+
+    for employer_id in id_company:
+        if employer_id is None:
+            print(f"Пропущен недопустимый ID компании: {employer_id}")
+            continue
+        params = {"employer_id": employer_id, "per_page": 10}
+
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=5)
+            response.raise_for_status()
+            data = response.json()
+
+            vacancies = data.get("items", [])
+            if vacancies:
+                all_vacancies.extend(vacancies)
+                print(f"Найдено {len(vacancies)} вакансий для работодателя {employer_id}")
+            else:
+                print(f"Нет вакансий для работодателя {employer_id}")
+
+        except requests.RequestException as e:
+            print(f"Ошибка при загрузке вакансий для {employer_id}: {e}")
+
+    return all_vacancies
+
+
 if __name__ == '__main__':
     user_input = input("Введите список компании(например: Яндекс, Сбер...): ").lower()
     company_id =load_company(user_input)
+    all_vacancies = loader_vacancies(company_id)
