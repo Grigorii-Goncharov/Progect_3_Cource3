@@ -4,7 +4,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 DB_CONFIG = {
     'dbname': 'hh_vacancies',
     'user': 'postgres',
-    'password': 12345,
+    'password': 220118021985,
     'host': 'localhost',
     'port': 5432
 }

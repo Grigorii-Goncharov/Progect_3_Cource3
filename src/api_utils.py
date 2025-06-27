@@ -40,7 +40,7 @@ def load_company(companies_list_input: str):
     return employer_id
 
 
-def loader_vacancies(id_company):
+def load_vacancies(id_company):
     '''Нахождение вакансий от работодателей из списка вакансий по ID работодателя'''
     url = "https://api.hh.ru/vacancies"
     headers = {'User-Agent': USER_AGENT}
