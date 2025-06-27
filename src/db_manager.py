@@ -55,7 +55,7 @@ class DBManager:
             cur.execute("""
                 SELECT id, name, salary_from, salary_to, currency, url
                 FROM vacancies
-                WHERE name ILIKE %s
+                WHERE name LIKE %s
             """, (f"%{keyword}%",))
             return cur.fetchall()
 
