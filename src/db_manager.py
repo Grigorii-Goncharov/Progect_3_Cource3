@@ -1,18 +1,18 @@
 import psycopg2
-from config import DB_CONFIG
+from config import config
 
 class DBManager:
     def __init__(self):
-        self.conn = psycopg2.connect(**DB_CONFIG)
+        self.conn = psycopg2.connect(**config())
 
     def get_companies_and_vacancies_count(self):
         '''Получает список всех компаний и количество вакансий у каждой компании'''
         with self.conn.cursor() as cur:
             cur.execute("""
-                SELECT employers.name, COUNT(vacancies.id) 
-                FROM employers
-                LEFT JOIN vacancies ON employers.id_company = vacancies.employer_id
-                GROUP BY employers.name
+                SELECT employees.name, COUNT(vacancies.id) 
+                FROM employees
+                LEFT JOIN vacancies ON employees.id_company = vacancies.employer_id
+                GROUP BY employees.name
             """)
             return cur.fetchall()
 
@@ -20,9 +20,9 @@ class DBManager:
         '''Получает список всех вакансий с указанием названия компании, названия вакансии и зарплаты и ссылки на вакансию'''
         with self.conn.cursor() as cur:
             cur.execute("""
-                SELECT employers.name, vacancies.name, vacancies.salary_from, vacancies.salary_to, vacancies.currency, vacancies.url
+                SELECT employees.name, vacancies.name, vacancies.salary_from, vacancies.salary_to, vacancies.currency, vacancies.url
                 FROM vacancies
-                JOIN employers ON employers.id_company = vacancies.employer_id
+                JOIN employees ON employees.id_company = vacancies.employer_id
             """)
             return cur.fetchall()
 
@@ -55,7 +55,7 @@ class DBManager:
             cur.execute("""
                 SELECT id, name, salary_from, salary_to, currency, url
                 FROM vacancies
-                WHERE name LIKE %s
+                WHERE name ILIKE %s
             """, (f"%{keyword}%",))
             return cur.fetchall()
 

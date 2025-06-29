@@ -1,14 +1,13 @@
 import psycopg2
+from config import config
 
-from config import DB_CONFIG
 
-
-def insert_employers(vacancies):
+def insert_employees(vacancies):
     """
     Добавляет работодателей в таблицу employers на основе списка вакансий.
     Берёт данные из поля 'employer' каждой вакансии.
     """
-    conn = psycopg2.connect(**DB_CONFIG)
+    conn = psycopg2.connect(**config())
     cur = conn.cursor()
 
     for vac in vacancies:
@@ -25,7 +24,7 @@ def insert_employers(vacancies):
             area = vac.get('area', {}).get('name') if vac.get('area') else None
 
             cur.execute("""
-                INSERT INTO employers (id_company, name, alternate_url, area)
+                INSERT INTO employees (id_company, name, alternate_url, area)
                 VALUES (%s, %s, %s, %s)
                 ON CONFLICT (id_company) DO NOTHING
             """, (employer_id, name, alternate_url, area))
@@ -37,22 +36,23 @@ def insert_employers(vacancies):
     cur.close()
     conn.close()
 
+
 def insert_vacancies(vacancies):
     '''Добавляет вакансии работодателей в таблицу vacancies на основе списка работодателей.'''
-    conn = psycopg2.connect(**DB_CONFIG)
+    conn = psycopg2.connect(**config())
     cur = conn.cursor()
 
-    for vac in vacancies:# Перебор каждого работодателя
+    for vac in vacancies:  # Перебор каждого работодателя
         try:
             employer = vac.get('employer')
             if not employer or 'id' not in employer:
                 print(f"Пропущена вакансия {vac['id']} — нет данных о работодателе")
                 continue
 
-            employer_id = employer['id'] # получаем ID работодателя для проверки на дубли
+            employer_id = employer['id']  # получаем ID работодателя для проверки на дубли
 
             # Проверяем, существует ли работодатель в БД
-            cur.execute("SELECT 1 FROM employers WHERE id_company = %s", (employer_id,))
+            cur.execute("SELECT 1 FROM employees WHERE id_company = %s", (employer_id,))
             if cur.fetchone() is None:
                 print(f"Пропущена вакансия {vac['id']} — работодатель {employer_id} не найден в БД")
                 continue
@@ -75,6 +75,24 @@ def insert_vacancies(vacancies):
         except Exception as e:
             print(f"Ошибка при обработке вакансии {vac.get('id')}: {e}")
 
+    conn.commit()
+    cur.close()
+    conn.close()
+
+
+def clear_employees_table():
+    conn = psycopg2.connect(**config())
+    cur = conn.cursor()
+    cur.execute("TRUNCATE TABLE employees CASCADE")
+    conn.commit()
+    cur.close()
+    conn.close()
+
+
+def clear_vacancies_table():
+    conn = psycopg2.connect(**config())
+    cur = conn.cursor()
+    cur.execute("TRUNCATE TABLE vacancies")
     conn.commit()
     cur.close()
     conn.close()
