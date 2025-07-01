@@ -41,7 +41,7 @@ class HeadHunterAPI():
             return []
         return items
 
-    def get_employers(self, text: str, per_page: int = 10) -> List[Dict[str, Any]]:
+    def get_employees(self, text: str, per_page: int = 10) -> List[Dict[str, Any]]:
         """Поиск работодателей по тексту"""
         if not self.__session:
             self._connect()
@@ -50,23 +50,3 @@ class HeadHunterAPI():
         response.raise_for_status()
         data = response.json()
         return data.get("items", [])
-
-
-# if __name__ == "__main__":
-#     api = HeadHunterAPI()
-#     user_input = "разработчик"
-#     try:
-#         vacancies = api.get_vacancies(keyword=user_input, per_page=10)
-#         print(f"Получено вакансий: {len(vacancies)}")
-#         for vacancy in vacancies:
-#             print(f"Вакансия: {vacancy.get('name')}, URL: {vacancy.get('alternate_url')}")
-#     except Exception as e:
-#         print(f"Ошибка при получении вакансий: {e}")
-#
-#     try:
-#         employers = api.get_employers(text="мтс", per_page=10)
-#         print(f"Найдено работодателей: {len(employers)}")
-#         for employee in employers:
-#             print(f"Компания: {employee.get('name')}, ID: {employee.get('id')}")
-#     except Exception as e:
-#         print(f"Ошибка при поиске работодателей: {e}")

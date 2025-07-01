@@ -1,8 +1,6 @@
 
-import psycopg2
-from config import config
 from src.api_utils import HeadHunterAPI
-from src.db_utils import insert_employees, insert_vacancies, clear_employees_table,clear_vacancies_table
+from src.db_utils import  insert_employers, insert_vacancies, clear_employees_table, clear_vacancies_table
 from src.database import create_database, create_tables
 from src.db_manager import DBManager
 
@@ -10,15 +8,15 @@ from src.db_manager import DBManager
 def user_interface(text):
     if text == 'да':
         api = HeadHunterAPI()
-        user_input = input("Введите название вакансии(например, 'Puthon-разработчик'): ").lower()
-        print("Идет получение списка вакансий c сайта https://hh.ru ...\n")
+        user_input = input("Введите название вакансии(например, 'Puthon-разработчик или врач'): ").lower()
+        print(f"Осуществляю подключение к hh.ru ...\n")
         try:
             # Шаг 1: получаем список вакансий по ключевому слову
             vacancies = api.get_vacancies(keyword=user_input, per_page=10)
             print(f"Получено вакансий: {len(vacancies)}")
 
             # Шаг 2: сохраняем всех работодателей из этих вакансий
-            insert_employees(vacancies)
+            insert_employers(vacancies)
 
             # Шаг 3: сохраняем сами вакансии (теперь работодатели уже в БД)
             insert_vacancies(vacancies)
@@ -39,19 +37,19 @@ def user_interface(text):
                 print("\n Компании и количество вакансий:")
                 for name, count in res:
                     print(f"{name}: {count} вакансий")
-                    print("=" - 70)
+                    print("=" * 70)
 
             elif choice == "2":
                 res = manager.get_all_vacancies()
                 print("\n Все вакансии:")
                 for item in res:
                     print(item)
-                    print("=" - 70)
+                    print("=" * 70)
 
             elif choice == "3":
                 avg = manager.get_avg_salary()
                 print(f"\n Средняя зарплата: {avg:.2f}")
-                print("=" - 70)
+                print("=" * 70)
 
             elif choice == "4":
                 avg = manager.get_avg_salary()
@@ -59,7 +57,7 @@ def user_interface(text):
                 print(f"\n Вакансии с зарплатой выше средней ({avg:.2f}):")
                 for item in res:
                     print(item)
-                    print("=" - 70)
+                    print("=" * 70)
 
             elif choice == "5":
                 word = input("Введите ключевое слово: ")
@@ -67,10 +65,10 @@ def user_interface(text):
                 print(f"\n Результаты поиска по '{word}':")
                 for item in res:
                     print(item)
-                    print("=" - 70)
+                    print("=" * 70)
 
             else:
-                print(" Неверный выбор")
+                print("Неверный выбор")
 
 
         except Exception as e:
@@ -80,9 +78,7 @@ def user_interface(text):
             manager.close()
 
     else:
-        api = HeadHunterAPI()
-        user_input = input('').lower()
-        print("Underconstruction")
+        print('Поиск вакансий не был запущен!')
 
 
 if __name__ == "__main__":
@@ -92,10 +88,13 @@ if __name__ == "__main__":
         clear_vacancies_table()
 
         while True:
-            user_question = input("Получить вакансии из топ 10 компаний: да/нет ").strip().lower()
-            if user_question in ['да', 'нет']:
+            user_question = input("\nПолучить вакансии из топ 10 компаний: Да/Нет? ").strip().lower()
+            if user_question in ['да','нет']:
                 break
             else:
-                print(' Введите только "Да" или "Нет"!')
+                print('Введите только "Да" или "Нет"!')
 
         user_interface(user_question)
+
+
+
