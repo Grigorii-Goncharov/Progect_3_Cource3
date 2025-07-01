@@ -3,12 +3,13 @@ name = "course-project3-vacancies-db"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Grigorii",email = "grigoriy85@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "requests (>=2.32.4,<3.0.0)"
+    "requests (>=2.32.4,<3.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)"
 ]
 
 
@@ -25,4 +26,52 @@ isort = "^6.0.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.1"
+
+[tool.poetry.dependencies]
+psycopg2 = "^2.9"
+
+[tool.black]
+line-length = 119
+exclude = '''
+/(
+    \.venv
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.pytest_cache
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+# Игнорирование ошибок
+ignore_missing_imports = true           # Игнорировать отсутствующие импорты
+allow_untyped_calls = true              # Разрешить вызовы функций без type hints
+allow_untyped_defs = true               # Разрешить определение функций без type hints
+disallow_any_generics = true
+warn_return_no_annotated = true
+warn_return_any = false                 # Не предупреждать о возврате Any
+warn_unused_configs = true              # Предупреждать об unused конфигах
+
+# Полезные проверки
+no_implicit_optional = true             # Явно указывать Optional для аргументов
+
+# Исключения (не проверять эти директории/файлы)
+exclude = [
+    "^.venv/",
+    "^.mypy_cache/",
+    "^build/",
+    "^dist/"
+]
+
+[tool.isort]
+line_length = 119
+skip = [".venv", ".git", "__pycache__", "build", "dist"]
+
+[tool.flake8]
+max-line-length = 119
 
