@@ -1,8 +1,15 @@
+import json
+import os
 from typing import Any, Dict, List, Optional
 
 import requests
 
 from config import USER_AGENT
+
+# Получаем путь к текущему скрипту
+script_dir = os.path.dirname(os.path.abspath(__file__))
+path_to_json = os.path.join(script_dir, "../data/vacancy_hh.json")
+os.makedirs(os.path.dirname(path_to_json), exist_ok=True)
 
 
 class HeadHunterAPI:
@@ -42,6 +49,11 @@ class HeadHunterAPI:
         items = data.get("items", [])
         if not isinstance(items, list):
             return []
+
+        # Сохраняем результаты для проверки
+        with open(path_to_json, "w", encoding="utf-8") as file:
+            json.dump(items, file, ensure_ascii=False, indent=4)
+
         return items
 
     def get_employees(self, text: str, per_page: int = 10) -> List[Dict[str, Any]]:
@@ -54,4 +66,9 @@ class HeadHunterAPI:
         )
         response.raise_for_status()
         data = response.json()
+
+        # Сохраняем результаты для проверки
+        with open(path_to_json, "w", encoding="utf-8") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+
         return data.get("items", [])
