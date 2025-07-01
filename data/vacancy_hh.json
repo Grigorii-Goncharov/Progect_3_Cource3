@@ -1,8 +1,8 @@
 [
     {
-        "id": "122219529",
+        "id": "121601447",
         "premium": false,
-        "name": "Врач-хирург",
+        "name": "Начинающий массажист-косметолог",
         "department": null,
         "has_test": false,
         "response_letter_required": false,
@@ -12,16 +12,16 @@
             "url": "https://api.hh.ru/areas/1"
         },
         "salary": {
-            "from": 180000,
-            "to": null,
+            "from": 100000,
+            "to": 130000,
             "currency": "RUR",
-            "gross": true
+            "gross": false
         },
         "salary_range": {
-            "from": 180000,
-            "to": null,
+            "from": 100000,
+            "to": 130000,
             "currency": "RUR",
-            "gross": true,
+            "gross": false,
             "mode": {
                 "id": "MONTH",
                 "name": "За месяц"
@@ -35,83 +35,40 @@
             "id": "open",
             "name": "Открытая"
         },
-        "address": {
-            "city": "село Ромашково",
-            "street": "Рублёвский проезд",
-            "building": "41",
-            "lat": 55.726832,
-            "lng": 37.329815,
-            "description": null,
-            "raw": "село Ромашково, Рублёвский проезд, 41",
-            "metro": {
-                "station_name": "Баковка",
-                "line_name": "МЦД-1",
-                "station_id": "131.709",
-                "line_id": "131",
-                "lat": 55.682816,
-                "lng": 37.315205
-            },
-            "metro_stations": [
-                {
-                    "station_name": "Баковка",
-                    "line_name": "МЦД-1",
-                    "station_id": "131.709",
-                    "line_id": "131",
-                    "lat": 55.682816,
-                    "lng": 37.315205
-                },
-                {
-                    "station_name": "Немчиновка",
-                    "line_name": "МЦД-1",
-                    "station_id": "131.707",
-                    "line_id": "131",
-                    "lat": 55.715668,
-                    "lng": 37.374611
-                },
-                {
-                    "station_name": "Сетунь",
-                    "line_name": "МЦД-1",
-                    "station_id": "131.706",
-                    "line_id": "131",
-                    "lat": 55.723713,
-                    "lng": 37.397259
-                }
-            ],
-            "id": "18511859"
-        },
+        "address": null,
         "response_url": null,
         "sort_point_distance": null,
-        "published_at": "2025-06-30T17:11:38+0300",
-        "created_at": "2025-06-30T17:11:38+0300",
+        "published_at": "2025-06-30T08:59:44+0300",
+        "created_at": "2025-06-30T08:59:44+0300",
         "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122219529",
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121601447",
         "show_logo_in_search": null,
         "show_contacts": true,
         "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122219529?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122219529",
+        "url": "https://api.hh.ru/vacancies/121601447?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/121601447",
         "relations": [],
         "employer": {
-            "id": "2472946",
-            "name": "ГБУЗ МОСКОВСКОЙ ОБЛАСТИ ДКЦ ИМ. Л.М. РОШАЛЯ",
-            "url": "https://api.hh.ru/employers/2472946",
-            "alternate_url": "https://hh.ru/employer/2472946",
+            "id": "5494459",
+            "name": "Ухмыленко Дарья Александровна",
+            "url": "https://api.hh.ru/employers/5494459",
+            "alternate_url": "https://hh.ru/employer/5494459",
             "logo_urls": {
-                "original": "https://img.hhcdn.ru/employer-logo-original/1370913.png",
-                "90": "https://img.hhcdn.ru/employer-logo/7103554.png",
-                "240": "https://img.hhcdn.ru/employer-logo/7103555.png"
+                "original": "https://img.hhcdn.ru/employer-logo-original/1002273.PNG",
+                "90": "https://img.hhcdn.ru/employer-logo/5629872.jpeg",
+                "240": "https://img.hhcdn.ru/employer-logo/5629873.jpeg"
             },
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2472946",
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5494459",
             "accredited_it_employer": false,
             "employer_rating": {
-                "total_rating": "4",
-                "reviews_count": 5
+                "total_rating": "4.7",
+                "reviews_count": 9
             },
             "trusted": true
         },
         "snippet": {
-            "requirement": "Высшее медицинское образование. Сертификат/аккредитация \"Хирургия\".",
-            "responsibility": "Ведение амбулаторных пациентов. Проведение малых оперативных вмешательств, не требующих госпитализации. При необходимости своевременное направление в стационар. Оказание квалифицированной медицинской помощи..."
+            "requirement": "Наличие документов о прохождении базовых курсов по <highlighttext>косметологии</highlighttext> / массажу.",
+            "responsibility": "На высшем уровне предоставление услуг по эстетической <highlighttext>косметологии</highlighttext>: -массаж лица. -пилинги. -уходовые процедуры. - чистка лица+ ассортимент услуг пополняется новыми услугами."
         },
         "contacts": null,
         "schedule": {
@@ -131,27 +88,27 @@
         ],
         "working_hours": [
             {
-                "id": "HOURS_24",
-                "name": "24 часа"
+                "id": "FLEXIBLE",
+                "name": "По договорённости"
             }
         ],
         "work_schedule_by_days": [
             {
-                "id": "ONE_ON_THREE_OFF",
-                "name": "1/3"
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
             }
         ],
         "night_shifts": false,
         "professional_roles": [
             {
-                "id": "24",
-                "name": "Врач"
+                "id": "56",
+                "name": "Косметолог"
             }
         ],
         "accept_incomplete_resumes": true,
         "experience": {
-            "id": "between1And3",
-            "name": "От 1 года до 3 лет"
+            "id": "noExperience",
+            "name": "Нет опыта"
         },
         "employment": {
             "id": "full",
@@ -167,26 +124,26 @@
         "adv_context": null
     },
     {
-        "id": "122223746",
+        "id": "122058449",
         "premium": false,
-        "name": "Врач - хирург",
+        "name": "Врач-косметолог / Специалист по лазерной эпиляции на александритовых лазерах",
         "department": null,
         "has_test": false,
         "response_letter_required": false,
         "area": {
-            "id": "1",
-            "name": "Москва",
-            "url": "https://api.hh.ru/areas/1"
+            "id": "76",
+            "name": "Ростов-на-Дону",
+            "url": "https://api.hh.ru/areas/76"
         },
         "salary": {
-            "from": 200000,
-            "to": null,
+            "from": 100000,
+            "to": 180000,
             "currency": "RUR",
             "gross": false
         },
         "salary_range": {
-            "from": 200000,
-            "to": null,
+            "from": 100000,
+            "to": 180000,
             "currency": "RUR",
             "gross": false,
             "mode": {
@@ -203,45 +160,174 @@
             "name": "Открытая"
         },
         "address": {
-            "city": "Дубна",
-            "street": "Ленинградская улица",
-            "building": "9",
-            "lat": 56.750409,
-            "lng": 37.199514,
+            "city": "Ростов-на-Дону",
+            "street": "Красноармейская улица",
+            "building": "202",
+            "lat": 47.229721,
+            "lng": 39.723834,
             "description": null,
-            "raw": "Дубна, Ленинградская улица, 9",
+            "raw": "Ростов-на-Дону, Красноармейская улица, 202",
             "metro": null,
             "metro_stations": [],
-            "id": "14923771"
+            "id": "18549599"
         },
         "response_url": null,
         "sort_point_distance": null,
-        "published_at": "2025-06-30T19:31:22+0300",
-        "created_at": "2025-06-30T19:31:22+0300",
+        "published_at": "2025-07-01T14:42:31+0300",
+        "created_at": "2025-07-01T14:42:31+0300",
         "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122223746",
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122058449",
         "show_contacts": true,
         "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122223746?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122223746",
+        "url": "https://api.hh.ru/vacancies/122058449?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/122058449",
         "relations": [],
         "employer": {
-            "id": "5980490",
-            "name": "ФБУЗ МСЧ № 9 ФМБА России",
-            "url": "https://api.hh.ru/employers/5980490",
-            "alternate_url": "https://hh.ru/employer/5980490",
+            "id": "12069249",
+            "name": "Monako",
+            "url": "https://api.hh.ru/employers/12069249",
+            "alternate_url": "https://hh.ru/employer/12069249",
             "logo_urls": null,
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5980490",
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=12069249",
             "accredited_it_employer": false,
-            "employer_rating": {
-                "total_rating": "3.4",
-                "reviews_count": 4
-            },
+            "employer_rating": null,
             "trusted": true
         },
         "snippet": {
-            "requirement": "Высшее образование по специальности \" Лечебное дело\". Ординатура/интернатура по специальности \"Хирургия\".",
-            "responsibility": "Согласно должностной инструкции <highlighttext>врача</highlighttext> - хирурга поликлиники для взрослых."
+            "requirement": "Высшее или среднее медицинское образование (обязательно). ️ Готовность заниматься исключительно лазерной эпиляцией и углубленно изучать все аспекты процедуры: от техники работы...",
+            "responsibility": null
+        },
+        "contacts": null,
+        "schedule": {
+            "id": "shift",
+            "name": "Сменный график"
+        },
+        "working_days": [],
+        "working_time_intervals": [],
+        "working_time_modes": [],
+        "accept_temporary": false,
+        "fly_in_fly_out_duration": [],
+        "work_format": [
+            {
+                "id": "ON_SITE",
+                "name": "На месте работодателя"
+            }
+        ],
+        "working_hours": [
+            {
+                "id": "FLEXIBLE",
+                "name": "По договорённости"
+            }
+        ],
+        "work_schedule_by_days": [
+            {
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
+            }
+        ],
+        "night_shifts": false,
+        "professional_roles": [
+            {
+                "id": "24",
+                "name": "Врач"
+            }
+        ],
+        "accept_incomplete_resumes": true,
+        "experience": {
+            "id": "noExperience",
+            "name": "Нет опыта"
+        },
+        "employment": {
+            "id": "full",
+            "name": "Полная занятость"
+        },
+        "employment_form": {
+            "id": "FULL",
+            "name": "Полная"
+        },
+        "internship": false,
+        "adv_response_url": null,
+        "is_adv_vacancy": false,
+        "adv_context": null
+    },
+    {
+        "id": "121674955",
+        "premium": false,
+        "name": "Специалист по аппаратной косметологии / косметолог",
+        "department": null,
+        "has_test": false,
+        "response_letter_required": false,
+        "area": {
+            "id": "301",
+            "name": "Обнинск",
+            "url": "https://api.hh.ru/areas/301"
+        },
+        "salary": {
+            "from": 80000,
+            "to": 150000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "salary_range": {
+            "from": 80000,
+            "to": 150000,
+            "currency": "RUR",
+            "gross": false,
+            "mode": {
+                "id": "MONTH",
+                "name": "За месяц"
+            },
+            "frequency": {
+                "id": "TWICE_PER_MONTH",
+                "name": "Два раза в месяц"
+            }
+        },
+        "type": {
+            "id": "open",
+            "name": "Открытая"
+        },
+        "address": {
+            "city": "Обнинск",
+            "street": "улица Усачёва",
+            "building": "17",
+            "lat": 55.109384,
+            "lng": 36.579425,
+            "description": null,
+            "raw": "Обнинск, улица Усачёва, 17",
+            "metro": null,
+            "metro_stations": [],
+            "id": "18557216"
+        },
+        "response_url": null,
+        "sort_point_distance": null,
+        "published_at": "2025-07-01T13:16:21+0300",
+        "created_at": "2025-07-01T13:16:21+0300",
+        "archived": false,
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121674955",
+        "show_logo_in_search": null,
+        "show_contacts": true,
+        "insider_interview": null,
+        "url": "https://api.hh.ru/vacancies/121674955?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/121674955",
+        "relations": [],
+        "employer": {
+            "id": "4034663",
+            "name": "Slim&Beauty",
+            "url": "https://api.hh.ru/employers/4034663",
+            "alternate_url": "https://hh.ru/employer/4034663",
+            "logo_urls": {
+                "original": "https://img.hhcdn.ru/employer-logo-original/1343833.png",
+                "90": "https://img.hhcdn.ru/employer-logo/6995274.png",
+                "240": "https://img.hhcdn.ru/employer-logo/6995275.png"
+            },
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4034663",
+            "accredited_it_employer": false,
+            "employer_rating": null,
+            "trusted": true
+        },
+        "snippet": {
+            "requirement": "Обладание навыками продаж. Опыт работы в аналогичной должности будет вашим преимуществом. Коммуникабельность. Высокие моральные принципы. Обучаемость. Стремление к совершенству. ",
+            "responsibility": "Оказание максимального качества услуг в соответствии с протоколами проведения процедур. Обеспечение безупречного уровня клиентского сервиса. Продажа больших абонементов, повышение среднего..."
         },
         "contacts": null,
         "schedule": {
@@ -261,175 +347,11 @@
         ],
         "working_hours": [
             {
-                "id": "HOURS_7",
-                "name": "7 часов"
+                "id": "HOURS_8",
+                "name": "8 часов"
             }
         ],
         "work_schedule_by_days": [
-            {
-                "id": "FIVE_ON_TWO_OFF",
-                "name": "5/2"
-            }
-        ],
-        "night_shifts": false,
-        "professional_roles": [
-            {
-                "id": "24",
-                "name": "Врач"
-            }
-        ],
-        "accept_incomplete_resumes": false,
-        "experience": {
-            "id": "between1And3",
-            "name": "От 1 года до 3 лет"
-        },
-        "employment": {
-            "id": "full",
-            "name": "Полная занятость"
-        },
-        "employment_form": {
-            "id": "FULL",
-            "name": "Полная"
-        },
-        "internship": false,
-        "adv_response_url": null,
-        "is_adv_vacancy": false,
-        "adv_context": null
-    },
-    {
-        "id": "122142595",
-        "premium": false,
-        "name": "Врач терапевт (г.Балашиха)",
-        "department": null,
-        "has_test": false,
-        "response_letter_required": false,
-        "area": {
-            "id": "2020",
-            "name": "Балашиха (Московская область)",
-            "url": "https://api.hh.ru/areas/2020"
-        },
-        "salary": {
-            "from": null,
-            "to": 200000,
-            "currency": "RUR",
-            "gross": true
-        },
-        "salary_range": {
-            "from": null,
-            "to": 200000,
-            "currency": "RUR",
-            "gross": true,
-            "mode": {
-                "id": "MONTH",
-                "name": "За месяц"
-            },
-            "frequency": {
-                "id": "TWICE_PER_MONTH",
-                "name": "Два раза в месяц"
-            }
-        },
-        "type": {
-            "id": "open",
-            "name": "Открытая"
-        },
-        "address": {
-            "city": "Балашиха",
-            "street": "Горенский бульвар",
-            "building": "3А",
-            "lat": 55.792098,
-            "lng": 37.887238,
-            "description": null,
-            "raw": "Балашиха, Горенский бульвар, 3А",
-            "metro": {
-                "station_name": "Новогиреево",
-                "line_name": "Калининская",
-                "station_id": "8.88",
-                "line_id": "8",
-                "lat": 55.752237,
-                "lng": 37.814587
-            },
-            "metro_stations": [
-                {
-                    "station_name": "Новогиреево",
-                    "line_name": "Калининская",
-                    "station_id": "8.88",
-                    "line_id": "8",
-                    "lat": 55.752237,
-                    "lng": 37.814587
-                }
-            ],
-            "id": "15408662"
-        },
-        "response_url": null,
-        "sort_point_distance": null,
-        "published_at": "2025-06-27T12:47:23+0300",
-        "created_at": "2025-06-27T12:47:23+0300",
-        "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122142595",
-        "show_logo_in_search": null,
-        "show_contacts": true,
-        "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122142595?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122142595",
-        "relations": [],
-        "employer": {
-            "id": "1218925",
-            "name": "АВС/МЕДИЦИНА",
-            "url": "https://api.hh.ru/employers/1218925",
-            "alternate_url": "https://hh.ru/employer/1218925",
-            "logo_urls": {
-                "original": "https://img.hhcdn.ru/employer-logo-original/1372440.png",
-                "90": "https://img.hhcdn.ru/employer-logo/7109662.png",
-                "240": "https://img.hhcdn.ru/employer-logo/7109663.png"
-            },
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1218925",
-            "accredited_it_employer": false,
-            "employer_rating": {
-                "total_rating": "4.1",
-                "reviews_count": 43
-            },
-            "trusted": true
-        },
-        "snippet": {
-            "requirement": "Высшее медицинское образование ординатура/интернатура. Действующий сертификат/аккредитация по специальности \"Терапия\". Опыт работы по специальности от 3-х лет. ",
-            "responsibility": "Амбулаторно-поликлинический прием пациентов. Ведение медицинской документации в электронном формате, согласно стандартам клиники. Своевременное заполнение протоколов историй болезни. "
-        },
-        "contacts": null,
-        "schedule": {
-            "id": "flexible",
-            "name": "Гибкий график"
-        },
-        "working_days": [],
-        "working_time_intervals": [
-            {
-                "id": "from_four_to_six_hours_in_a_day",
-                "name": "Можно сменами по 4-6 часов в день"
-            }
-        ],
-        "working_time_modes": [],
-        "accept_temporary": false,
-        "fly_in_fly_out_duration": [],
-        "work_format": [
-            {
-                "id": "ON_SITE",
-                "name": "На месте работодателя"
-            }
-        ],
-        "working_hours": [
-            {
-                "id": "HOURS_6",
-                "name": "6 часов"
-            },
-            {
-                "id": "HOURS_12",
-                "name": "12 часов"
-            }
-        ],
-        "work_schedule_by_days": [
-            {
-                "id": "SIX_ON_ONE_OFF",
-                "name": "6/1"
-            },
             {
                 "id": "FIVE_ON_TWO_OFF",
                 "name": "5/2"
@@ -437,148 +359,16 @@
             {
                 "id": "TWO_ON_TWO_OFF",
                 "name": "2/2"
-            },
+            }
+        ],
+        "night_shifts": false,
+        "professional_roles": [
             {
-                "id": "ONE_ON_THREE_OFF",
-                "name": "1/3"
-            },
-            {
-                "id": "ONE_ON_TWO_OFF",
-                "name": "1/2"
-            },
-            {
-                "id": "OTHER",
+                "id": "40",
                 "name": "Другое"
             }
         ],
-        "night_shifts": false,
-        "professional_roles": [
-            {
-                "id": "24",
-                "name": "Врач"
-            }
-        ],
         "accept_incomplete_resumes": true,
-        "experience": {
-            "id": "between1And3",
-            "name": "От 1 года до 3 лет"
-        },
-        "employment": {
-            "id": "full",
-            "name": "Полная занятость"
-        },
-        "employment_form": {
-            "id": "FULL",
-            "name": "Полная"
-        },
-        "internship": false,
-        "adv_response_url": null,
-        "is_adv_vacancy": false,
-        "adv_context": null
-    },
-    {
-        "id": "122271784",
-        "premium": false,
-        "name": "Врач-терапевт",
-        "department": null,
-        "has_test": false,
-        "response_letter_required": false,
-        "area": {
-            "id": "88",
-            "name": "Казань",
-            "url": "https://api.hh.ru/areas/88"
-        },
-        "salary": null,
-        "salary_range": null,
-        "type": {
-            "id": "open",
-            "name": "Открытая"
-        },
-        "address": {
-            "city": "Казань",
-            "street": "Кремлёвская набережная",
-            "building": "33",
-            "lat": 55.804096,
-            "lng": 49.146182,
-            "description": null,
-            "raw": "Казань, Кремлёвская набережная, 33",
-            "metro": {
-                "station_name": "Площадь Тукая",
-                "line_name": "Центральная",
-                "station_id": "49.273",
-                "line_id": "49",
-                "lat": 55.787163,
-                "lng": 49.122126
-            },
-            "metro_stations": [
-                {
-                    "station_name": "Площадь Тукая",
-                    "line_name": "Центральная",
-                    "station_id": "49.273",
-                    "line_id": "49",
-                    "lat": 55.787163,
-                    "lng": 49.122126
-                }
-            ],
-            "id": "5545776"
-        },
-        "response_url": null,
-        "sort_point_distance": null,
-        "published_at": "2025-07-01T17:01:04+0300",
-        "created_at": "2025-07-01T17:01:04+0300",
-        "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122271784",
-        "show_contacts": true,
-        "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122271784?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122271784",
-        "relations": [],
-        "employer": {
-            "id": "5320447",
-            "name": "ГБУ Молодежный Центр Республики Татарстан",
-            "url": "https://api.hh.ru/employers/5320447",
-            "alternate_url": "https://hh.ru/employer/5320447",
-            "logo_urls": null,
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5320447",
-            "accredited_it_employer": false,
-            "employer_rating": null,
-            "trusted": true
-        },
-        "snippet": {
-            "requirement": "На должность <highlighttext>врача</highlighttext>-терапевта назначаются специалисты, имеющие высшее медицинское образование по специальности \"Терапия\".",
-            "responsibility": "Оказывание доврачебной медицинской помощи. Осуществлять учет, хранение, использование лекарственных средств и медицинских изделий. Ведение медицинской документации. Осуществление сбора и утилизации..."
-        },
-        "contacts": null,
-        "schedule": {
-            "id": "shift",
-            "name": "Сменный график"
-        },
-        "working_days": [],
-        "working_time_intervals": [],
-        "working_time_modes": [],
-        "accept_temporary": false,
-        "fly_in_fly_out_duration": [],
-        "work_format": [],
-        "working_hours": [
-            {
-                "id": "HOURS_12",
-                "name": "12 часов"
-            }
-        ],
-        "work_schedule_by_days": [
-            {
-                "id": "TWO_ON_TWO_OFF",
-                "name": "2/2"
-            }
-        ],
-        "night_shifts": false,
-        "professional_roles": [
-            {
-                "id": "24",
-                "name": "Врач"
-            }
-        ],
-        "accept_incomplete_resumes": false,
         "experience": {
             "id": "noExperience",
             "name": "Нет опыта"
@@ -597,9 +387,9 @@
         "adv_context": null
     },
     {
-        "id": "122193054",
+        "id": "121527072",
         "premium": false,
-        "name": "Врач-терапевт участковый/ Врач общей практики (семейный врач)",
+        "name": "Косметолог-эстетист / врач-косметолог",
         "department": null,
         "has_test": false,
         "response_letter_required": false,
@@ -609,16 +399,191 @@
             "url": "https://api.hh.ru/areas/1"
         },
         "salary": {
-            "from": 200000,
-            "to": 220000,
+            "from": 220000,
+            "to": null,
             "currency": "RUR",
-            "gross": true
+            "gross": false
         },
         "salary_range": {
-            "from": 200000,
-            "to": 220000,
+            "from": 220000,
+            "to": null,
             "currency": "RUR",
-            "gross": true,
+            "gross": false,
+            "mode": {
+                "id": "MONTH",
+                "name": "За месяц"
+            },
+            "frequency": {
+                "id": "TWICE_PER_MONTH",
+                "name": "Два раза в месяц"
+            }
+        },
+        "type": {
+            "id": "open",
+            "name": "Открытая"
+        },
+        "address": {
+            "city": null,
+            "street": null,
+            "building": null,
+            "lat": null,
+            "lng": null,
+            "description": null,
+            "raw": null,
+            "metro": {
+                "station_name": "Китай-город",
+                "line_name": "Калужско-Рижская",
+                "station_id": "6.50",
+                "line_id": "6",
+                "lat": 55.756498,
+                "lng": 37.631326
+            },
+            "metro_stations": [
+                {
+                    "station_name": "Китай-город",
+                    "line_name": "Калужско-Рижская",
+                    "station_id": "6.50",
+                    "line_id": "6",
+                    "lat": 55.756498,
+                    "lng": 37.631326
+                },
+                {
+                    "station_name": "Китай-город",
+                    "line_name": "Таганско-Краснопресненская",
+                    "station_id": "7.51",
+                    "line_id": "7",
+                    "lat": 55.75436,
+                    "lng": 37.633877
+                },
+                {
+                    "station_name": "Менделеевская",
+                    "line_name": "Серпуховско-Тимирязевская",
+                    "station_id": "9.83",
+                    "line_id": "9",
+                    "lat": 55.781999,
+                    "lng": 37.599141
+                },
+                {
+                    "station_name": "Новослободская",
+                    "line_name": "Кольцевая",
+                    "station_id": "5.82",
+                    "line_id": "5",
+                    "lat": 55.779606,
+                    "lng": 37.601252
+                }
+            ],
+            "id": "17176062"
+        },
+        "response_url": null,
+        "sort_point_distance": null,
+        "published_at": "2025-07-01T16:04:23+0300",
+        "created_at": "2025-07-01T16:04:23+0300",
+        "archived": false,
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121527072",
+        "show_contacts": true,
+        "insider_interview": null,
+        "url": "https://api.hh.ru/vacancies/121527072?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/121527072",
+        "relations": [],
+        "employer": {
+            "id": "4995297",
+            "name": "Блоссом",
+            "url": "https://api.hh.ru/employers/4995297",
+            "alternate_url": "https://hh.ru/employer/4995297",
+            "logo_urls": null,
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4995297",
+            "accredited_it_employer": false,
+            "employer_rating": null,
+            "trusted": true
+        },
+        "snippet": {
+            "requirement": "...ординатура дерматовенерология + переподготовка <highlighttext>косметология</highlighttext>). Наличие среднего медицинского образования (+сестринское дело в <highlighttext>косметологии</highlighttext>). Наличие действующего сертификата или аккредитации по <highlighttext>косметологии</highlighttext>.",
+            "responsibility": "Приём и консультация пациентов по записи. Проведение эстетических, аппаратных и инъекционных процедур. Инъекции, мезо и био, контурная пластика. Аппаратная <highlighttext>косметология</highlighttext>."
+        },
+        "contacts": null,
+        "schedule": {
+            "id": "flexible",
+            "name": "Гибкий график"
+        },
+        "working_days": [],
+        "working_time_intervals": [],
+        "working_time_modes": [],
+        "accept_temporary": true,
+        "fly_in_fly_out_duration": [],
+        "work_format": [
+            {
+                "id": "ON_SITE",
+                "name": "На месте работодателя"
+            }
+        ],
+        "working_hours": [
+            {
+                "id": "HOURS_12",
+                "name": "12 часов"
+            }
+        ],
+        "work_schedule_by_days": [
+            {
+                "id": "FOUR_ON_TWO_OFF",
+                "name": "4/2"
+            },
+            {
+                "id": "THREE_ON_TWO_OFF",
+                "name": "3/2"
+            },
+            {
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
+            }
+        ],
+        "night_shifts": false,
+        "professional_roles": [
+            {
+                "id": "56",
+                "name": "Косметолог"
+            }
+        ],
+        "accept_incomplete_resumes": true,
+        "experience": {
+            "id": "noExperience",
+            "name": "Нет опыта"
+        },
+        "employment": {
+            "id": "full",
+            "name": "Полная занятость"
+        },
+        "employment_form": {
+            "id": "FULL",
+            "name": "Полная"
+        },
+        "internship": false,
+        "adv_response_url": null,
+        "is_adv_vacancy": false,
+        "adv_context": null
+    },
+    {
+        "id": "122018244",
+        "premium": false,
+        "name": "Косметолог-эстетист",
+        "department": null,
+        "has_test": false,
+        "response_letter_required": false,
+        "area": {
+            "id": "1",
+            "name": "Москва",
+            "url": "https://api.hh.ru/areas/1"
+        },
+        "salary": {
+            "from": 80000,
+            "to": null,
+            "currency": "RUR",
+            "gross": false
+        },
+        "salary_range": {
+            "from": 80000,
+            "to": null,
+            "currency": "RUR",
+            "gross": false,
             "mode": {
                 "id": "MONTH",
                 "name": "За месяц"
@@ -638,81 +603,102 @@
             "description": null,
             "raw": null,
             "metro": {
-                "station_name": "Озёрная",
-                "line_name": "Солнцевская",
-                "station_id": "133.608",
-                "line_id": "133",
-                "lat": 55.6698,
-                "lng": 37.4495
+                "station_name": "Охотный ряд",
+                "line_name": "Сокольническая",
+                "station_id": "1.98",
+                "line_id": "1",
+                "lat": 55.757228,
+                "lng": 37.615078
             },
             "metro_stations": [
                 {
-                    "station_name": "Озёрная",
-                    "line_name": "Солнцевская",
-                    "station_id": "133.608",
-                    "line_id": "133",
-                    "lat": 55.6698,
-                    "lng": 37.4495
+                    "station_name": "Охотный ряд",
+                    "line_name": "Сокольническая",
+                    "station_id": "1.98",
+                    "line_id": "1",
+                    "lat": 55.757228,
+                    "lng": 37.615078
                 },
                 {
-                    "station_name": "Юго-Западная",
-                    "line_name": "Сокольническая",
-                    "station_id": "1.162",
-                    "line_id": "1",
-                    "lat": 55.663146,
-                    "lng": 37.482852
+                    "station_name": "Площадь Революции",
+                    "line_name": "Арбатско-Покровская",
+                    "station_id": "3.100",
+                    "line_id": "3",
+                    "lat": 55.756741,
+                    "lng": 37.62236
+                },
+                {
+                    "station_name": "Театральная",
+                    "line_name": "Замоскворецкая",
+                    "station_id": "2.99",
+                    "line_id": "2",
+                    "lat": 55.758808,
+                    "lng": 37.61768
                 }
             ],
-            "id": "15098692"
+            "id": "1575447"
         },
         "response_url": null,
         "sort_point_distance": null,
-        "published_at": "2025-06-30T11:00:00+0300",
-        "created_at": "2025-06-30T11:00:00+0300",
+        "published_at": "2025-06-30T16:29:44+0300",
+        "created_at": "2025-06-30T16:29:44+0300",
         "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122193054",
-        "show_contacts": false,
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122018244",
+        "branding": {
+            "type": "CONSTRUCTOR",
+            "tariff": "BASIC"
+        },
+        "show_logo_in_search": true,
+        "show_contacts": true,
         "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122193054?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122193054",
+        "url": "https://api.hh.ru/vacancies/122018244?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/122018244",
         "relations": [],
         "employer": {
-            "id": "3237762",
-            "name": "ГБУЗ Городская поликлиника № 8 ДЗМ",
-            "url": "https://api.hh.ru/employers/3237762",
-            "alternate_url": "https://hh.ru/employer/3237762",
-            "logo_urls": null,
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3237762",
+            "id": "816719",
+            "name": "Пальчики",
+            "url": "https://api.hh.ru/employers/816719",
+            "alternate_url": "https://hh.ru/employer/816719",
+            "logo_urls": {
+                "original": "https://img.hhcdn.ru/employer-logo-original/519133.jpg",
+                "90": "https://img.hhcdn.ru/employer-logo/2518009.jpeg",
+                "240": "https://img.hhcdn.ru/employer-logo/2518010.jpeg"
+            },
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=816719",
             "accredited_it_employer": false,
-            "employer_rating": null,
+            "employer_rating": {
+                "total_rating": "4.8",
+                "reviews_count": 103
+            },
             "trusted": true
         },
         "snippet": {
-            "requirement": "Высшее образование - специалитет по специальностям \"Педиатрия\" или \"Лечебное дело\", Сертификат специалиста по специальности \"Лечебное дело\" и (или) свидетельство об аккредитации...",
-            "responsibility": "Оказание первичной медико-санитарной помощи взрослому населению в амбулаторных условиях, не предусматривающих круглосуточного медицинского наблюдения и лечения, в том числе..."
+            "requirement": "Образование <highlighttext>косметолог</highlighttext>-эстетист/ <highlighttext>косметолог</highlighttext>-технолог, можно без опыта, но со знаниями в голове). Желание развиваться в эстетической <highlighttext>косметологии</highlighttext>. ",
+            "responsibility": "Массаж лица. Неинвазивные косметические процедуры. Подбор косметики по типу кожи."
         },
         "contacts": null,
         "schedule": {
-            "id": "flexible",
-            "name": "Гибкий график"
+            "id": "shift",
+            "name": "Сменный график"
         },
         "working_days": [],
         "working_time_intervals": [],
         "working_time_modes": [],
         "accept_temporary": false,
         "fly_in_fly_out_duration": [],
-        "work_format": [],
+        "work_format": [
+            {
+                "id": "ON_SITE",
+                "name": "На месте работодателя"
+            }
+        ],
         "working_hours": [
             {
-                "id": "OTHER",
-                "name": "Другое"
+                "id": "HOURS_12",
+                "name": "12 часов"
             }
         ],
         "work_schedule_by_days": [
-            {
-                "id": "FIVE_ON_TWO_OFF",
-                "name": "5/2"
-            },
             {
                 "id": "TWO_ON_TWO_OFF",
                 "name": "2/2"
@@ -721,14 +707,14 @@
         "night_shifts": false,
         "professional_roles": [
             {
-                "id": "24",
-                "name": "Врач"
+                "id": "56",
+                "name": "Косметолог"
             }
         ],
-        "accept_incomplete_resumes": false,
+        "accept_incomplete_resumes": true,
         "experience": {
-            "id": "between1And3",
-            "name": "От 1 года до 3 лет"
+            "id": "noExperience",
+            "name": "Нет опыта"
         },
         "employment": {
             "id": "full",
@@ -744,9 +730,9 @@
         "adv_context": null
     },
     {
-        "id": "122264904",
+        "id": "121784694",
         "premium": false,
-        "name": "Главный врач / Заместитель главного врача",
+        "name": "Косметолог ( м/с в косметологию)",
         "department": null,
         "has_test": false,
         "response_letter_required": false,
@@ -756,14 +742,14 @@
             "url": "https://api.hh.ru/areas/1"
         },
         "salary": {
-            "from": 350000,
-            "to": null,
+            "from": 180000,
+            "to": 200000,
             "currency": "RUR",
             "gross": false
         },
         "salary_range": {
-            "from": 350000,
-            "to": null,
+            "from": 180000,
+            "to": 200000,
             "currency": "RUR",
             "gross": false,
             "mode": {
@@ -778,370 +764,110 @@
         },
         "address": {
             "city": "Москва",
-            "street": "Воронцовская улица",
-            "building": "35Бк1",
-            "lat": 55.73441,
-            "lng": 37.663081,
+            "street": null,
+            "building": "Чистый пруд",
+            "lat": 55.760991,
+            "lng": 37.644684,
             "description": null,
-            "raw": "Москва, Воронцовская улица, 35Бк1",
+            "raw": "Москва, Чистый пруд",
             "metro": {
-                "station_name": "Крестьянская застава",
-                "line_name": "Люблинско-Дмитровская",
-                "station_id": "10.63",
-                "line_id": "10",
-                "lat": 55.732278,
-                "lng": 37.665325
+                "station_name": "Китай-город",
+                "line_name": "Калужско-Рижская",
+                "station_id": "6.50",
+                "line_id": "6",
+                "lat": 55.756498,
+                "lng": 37.631326
             },
             "metro_stations": [
                 {
-                    "station_name": "Крестьянская застава",
-                    "line_name": "Люблинско-Дмитровская",
-                    "station_id": "10.63",
-                    "line_id": "10",
-                    "lat": 55.732278,
-                    "lng": 37.665325
+                    "station_name": "Китай-город",
+                    "line_name": "Калужско-Рижская",
+                    "station_id": "6.50",
+                    "line_id": "6",
+                    "lat": 55.756498,
+                    "lng": 37.631326
                 },
                 {
-                    "station_name": "Пролетарская",
+                    "station_name": "Китай-город",
                     "line_name": "Таганско-Краснопресненская",
-                    "station_id": "7.62",
+                    "station_id": "7.51",
                     "line_id": "7",
-                    "lat": 55.731546,
-                    "lng": 37.666917
+                    "lat": 55.75436,
+                    "lng": 37.633877
+                },
+                {
+                    "station_name": "Чистые пруды",
+                    "line_name": "Сокольническая",
+                    "station_id": "1.143",
+                    "line_id": "1",
+                    "lat": 55.76499,
+                    "lng": 37.638293
                 }
             ],
-            "id": "1076249"
+            "id": "14919584"
         },
         "response_url": null,
         "sort_point_distance": null,
-        "published_at": "2025-07-01T16:17:51+0300",
-        "created_at": "2025-07-01T16:17:51+0300",
+        "published_at": "2025-06-30T12:35:45+0300",
+        "created_at": "2025-06-30T12:35:45+0300",
         "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122264904",
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121784694",
         "show_logo_in_search": null,
         "show_contacts": true,
         "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122264904?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122264904",
+        "url": "https://api.hh.ru/vacancies/121784694?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/121784694",
         "relations": [],
         "employer": {
-            "id": "3208395",
-            "name": "МЦ",
-            "url": "https://api.hh.ru/employers/3208395",
-            "alternate_url": "https://hh.ru/employer/3208395",
+            "id": "5741703",
+            "name": "Саншайн",
+            "url": "https://api.hh.ru/employers/5741703",
+            "alternate_url": "https://hh.ru/employer/5741703",
             "logo_urls": {
-                "original": "https://img.hhcdn.ru/employer-logo-original/1025854.png",
-                "90": "https://img.hhcdn.ru/employer-logo/5724184.jpeg",
-                "240": "https://img.hhcdn.ru/employer-logo/5724185.jpeg"
+                "original": "https://img.hhcdn.ru/employer-logo-original/893910.jpeg",
+                "90": "https://img.hhcdn.ru/employer-logo/4016327.jpeg",
+                "240": "https://img.hhcdn.ru/employer-logo/4016328.jpeg"
             },
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3208395",
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5741703",
             "accredited_it_employer": false,
             "employer_rating": {
-                "total_rating": "1.6",
-                "reviews_count": 3
+                "total_rating": "4.7",
+                "reviews_count": 23
             },
             "trusted": true
         },
         "snippet": {
-            "requirement": "Наличие действующего сертификата по организации здравоохранения. Приветствуется опыт работы заведующим отделением.",
-            "responsibility": "...координация работы <highlighttext>врачей</highlighttext>-специалистов в клинике. Контроль качества ведения медицинской документации <highlighttext>врачами</highlighttext>-специалистами. Поддержание коллегиальных связей между <highlighttext>врачами</highlighttext> клиники в..."
+            "requirement": "Опыт работы от 2 лет обязателен! Среднее медицинское образование, сертификат или аккредитация сестринское дело в <highlighttext>косметологии</highlighttext>.",
+            "responsibility": "Выполнение эстетических процедур мезотерапии, биоревитализации, чистки лица, массажей лица, уходовых процедур."
         },
         "contacts": null,
         "schedule": {
-            "id": "fullDay",
-            "name": "Полный день"
+            "id": "shift",
+            "name": "Сменный график"
         },
         "working_days": [],
         "working_time_intervals": [],
         "working_time_modes": [],
-        "accept_temporary": false,
-        "fly_in_fly_out_duration": [],
-        "work_format": [
-            {
-                "id": "ON_SITE",
-                "name": "На месте работодателя"
-            }
-        ],
-        "working_hours": [
-            {
-                "id": "OTHER",
-                "name": "Другое"
-            }
-        ],
-        "work_schedule_by_days": [
-            {
-                "id": "FIVE_ON_TWO_OFF",
-                "name": "5/2"
-            }
-        ],
-        "night_shifts": false,
-        "professional_roles": [
-            {
-                "id": "29",
-                "name": "Главный врач, заведующий отделением"
-            }
-        ],
-        "accept_incomplete_resumes": false,
-        "experience": {
-            "id": "moreThan6",
-            "name": "Более 6 лет"
-        },
-        "employment": {
-            "id": "full",
-            "name": "Полная занятость"
-        },
-        "employment_form": {
-            "id": "FULL",
-            "name": "Полная"
-        },
-        "internship": false,
-        "adv_response_url": null,
-        "is_adv_vacancy": false,
-        "adv_context": null
-    },
-    {
-        "id": "121730286",
-        "premium": false,
-        "name": "Врач-эксперт",
-        "department": null,
-        "has_test": false,
-        "response_letter_required": false,
-        "area": {
-            "id": "1",
-            "name": "Москва",
-            "url": "https://api.hh.ru/areas/1"
-        },
-        "salary": {
-            "from": 160000,
-            "to": null,
-            "currency": "RUR",
-            "gross": false
-        },
-        "salary_range": {
-            "from": 160000,
-            "to": null,
-            "currency": "RUR",
-            "gross": false,
-            "mode": {
-                "id": "MONTH",
-                "name": "За месяц"
-            },
-            "frequency": null
-        },
-        "type": {
-            "id": "open",
-            "name": "Открытая"
-        },
-        "address": {
-            "city": "деревня Холмы",
-            "street": null,
-            "building": "50",
-            "lat": 55.97602,
-            "lng": 36.984197,
-            "description": null,
-            "raw": "деревня Холмы, 50",
-            "metro": null,
-            "metro_stations": [],
-            "id": "15662824"
-        },
-        "response_url": null,
-        "sort_point_distance": null,
-        "published_at": "2025-06-29T12:29:10+0300",
-        "created_at": "2025-06-29T12:29:10+0300",
-        "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121730286",
-        "show_logo_in_search": null,
-        "show_contacts": true,
-        "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/121730286?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/121730286",
-        "relations": [],
-        "employer": {
-            "id": "202305",
-            "name": "М.П.А. медицинские партнеры",
-            "url": "https://api.hh.ru/employers/202305",
-            "alternate_url": "https://hh.ru/employer/202305",
-            "logo_urls": {
-                "original": "https://img.hhcdn.ru/employer-logo-original/945121.png",
-                "90": "https://img.hhcdn.ru/employer-logo/4221020.png",
-                "240": "https://img.hhcdn.ru/employer-logo/4221021.png"
-            },
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=202305",
-            "accredited_it_employer": false,
-            "employer_rating": {
-                "total_rating": "3.6",
-                "reviews_count": 20
-            },
-            "trusted": true
-        },
-        "snippet": {
-            "requirement": "Релевантный опыт в КЭР от 3х лет. Высшее медицинское, послевузовское и (или) дополнительное профессиональное образование и сертификат специалиста по...",
-            "responsibility": "Сопровождение при оформлении уведомления на включение ООО «М.П.А. медицинские партнеры – Здоровье» в реестр медицинских организаций системы ОМС на..."
-        },
-        "contacts": null,
-        "schedule": {
-            "id": "fullDay",
-            "name": "Полный день"
-        },
-        "working_days": [],
-        "working_time_intervals": [],
-        "working_time_modes": [],
-        "accept_temporary": false,
+        "accept_temporary": true,
         "fly_in_fly_out_duration": [],
         "work_format": [],
         "working_hours": [
             {
-                "id": "HOURS_8",
-                "name": "8 часов"
+                "id": "HOURS_12",
+                "name": "12 часов"
             }
         ],
         "work_schedule_by_days": [
             {
-                "id": "OTHER",
-                "name": "Другое"
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
             }
         ],
         "night_shifts": false,
         "professional_roles": [
             {
-                "id": "24",
-                "name": "Врач"
-            }
-        ],
-        "accept_incomplete_resumes": false,
-        "experience": {
-            "id": "between1And3",
-            "name": "От 1 года до 3 лет"
-        },
-        "employment": {
-            "id": "full",
-            "name": "Полная занятость"
-        },
-        "employment_form": {
-            "id": "FULL",
-            "name": "Полная"
-        },
-        "internship": false,
-        "adv_response_url": null,
-        "is_adv_vacancy": false,
-        "adv_context": null
-    },
-    {
-        "id": "122069100",
-        "premium": false,
-        "name": "Главный врач",
-        "department": null,
-        "has_test": false,
-        "response_letter_required": false,
-        "area": {
-            "id": "2041",
-            "name": "Мытищи (Московская область)",
-            "url": "https://api.hh.ru/areas/2041"
-        },
-        "salary": {
-            "from": 200000,
-            "to": null,
-            "currency": "RUR",
-            "gross": false
-        },
-        "salary_range": {
-            "from": 200000,
-            "to": null,
-            "currency": "RUR",
-            "gross": false,
-            "mode": {
-                "id": "MONTH",
-                "name": "За месяц"
-            },
-            "frequency": null
-        },
-        "type": {
-            "id": "open",
-            "name": "Открытая"
-        },
-        "address": {
-            "city": "Мытищи",
-            "street": "улица Мира",
-            "building": "10/10",
-            "lat": 55.913016,
-            "lng": 37.732521,
-            "description": null,
-            "raw": "Мытищи, улица Мира, 10/10",
-            "metro": null,
-            "metro_stations": [],
-            "id": "6733139"
-        },
-        "response_url": null,
-        "sort_point_distance": null,
-        "published_at": "2025-07-01T09:33:08+0300",
-        "created_at": "2025-07-01T09:33:08+0300",
-        "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122069100",
-        "show_logo_in_search": null,
-        "show_contacts": true,
-        "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122069100?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122069100",
-        "relations": [],
-        "employer": {
-            "id": "1711395",
-            "name": "Деломедика",
-            "url": "https://api.hh.ru/employers/1711395",
-            "alternate_url": "https://hh.ru/employer/1711395",
-            "logo_urls": {
-                "original": "https://img.hhcdn.ru/employer-logo-original/882774.jpg",
-                "90": "https://img.hhcdn.ru/employer-logo/3971803.jpeg",
-                "240": "https://img.hhcdn.ru/employer-logo/3971804.jpeg"
-            },
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1711395",
-            "accredited_it_employer": false,
-            "employer_rating": {
-                "total_rating": "4.1",
-                "reviews_count": 31
-            },
-            "trusted": true
-        },
-        "snippet": {
-            "requirement": "Высшее медицинское образование, наличие действующего сертификата по лечебной специальности (приоритетными являются «Терапия», «<highlighttext>Врач</highlighttext> общей практики», «Кардиология»). Наличие сертификата по специальности...",
-            "responsibility": "Участие в проведении предварительных и периодических осмотрах в качестве <highlighttext>врача</highlighttext>-специалиста своего профиля. Контроль качества заполнения <highlighttext>врачами</highlighttext> профилактических протоколов осмотра. "
-        },
-        "contacts": null,
-        "schedule": {
-            "id": "fullDay",
-            "name": "Полный день"
-        },
-        "working_days": [],
-        "working_time_intervals": [],
-        "working_time_modes": [],
-        "accept_temporary": false,
-        "fly_in_fly_out_duration": [],
-        "work_format": [
-            {
-                "id": "ON_SITE",
-                "name": "На месте работодателя"
-            }
-        ],
-        "working_hours": [
-            {
-                "id": "HOURS_8",
-                "name": "8 часов"
-            },
-            {
-                "id": "HOURS_9",
-                "name": "9 часов"
-            }
-        ],
-        "work_schedule_by_days": [
-            {
-                "id": "FIVE_ON_TWO_OFF",
-                "name": "5/2"
-            }
-        ],
-        "night_shifts": false,
-        "professional_roles": [
-            {
-                "id": "29",
-                "name": "Главный врач, заведующий отделением"
+                "id": "56",
+                "name": "Косметолог"
             }
         ],
         "accept_incomplete_resumes": true,
@@ -1163,246 +889,75 @@
         "adv_context": null
     },
     {
-        "id": "122212625",
+        "id": "120928670",
         "premium": false,
-        "name": "Врач-терапевт",
+        "name": "Косметолог-эстетист в сеть студий",
         "department": null,
         "has_test": false,
         "response_letter_required": false,
         "area": {
-            "id": "1",
-            "name": "Москва",
-            "url": "https://api.hh.ru/areas/1"
+            "id": "2",
+            "name": "Санкт-Петербург",
+            "url": "https://api.hh.ru/areas/2"
         },
         "salary": {
-            "from": 180000,
-            "to": null,
+            "from": 90000,
+            "to": 140000,
             "currency": "RUR",
             "gross": false
         },
         "salary_range": {
-            "from": 180000,
-            "to": null,
+            "from": 90000,
+            "to": 140000,
             "currency": "RUR",
             "gross": false,
             "mode": {
                 "id": "MONTH",
                 "name": "За месяц"
             },
-            "frequency": null
+            "frequency": {
+                "id": "TWICE_PER_MONTH",
+                "name": "Два раза в месяц"
+            }
         },
         "type": {
             "id": "open",
             "name": "Открытая"
         },
-        "address": {
-            "city": "Москва",
-            "street": "Саввинская набережная",
-            "building": "23с2",
-            "lat": 55.731749,
-            "lng": 37.56291,
-            "description": null,
-            "raw": "Москва, Саввинская набережная, 23с2",
-            "metro": {
-                "station_name": "Спортивная",
-                "line_name": "Сокольническая",
-                "station_id": "1.135",
-                "line_id": "1",
-                "lat": 55.722388,
-                "lng": 37.562041
-            },
-            "metro_stations": [
-                {
-                    "station_name": "Спортивная",
-                    "line_name": "Сокольническая",
-                    "station_id": "1.135",
-                    "line_id": "1",
-                    "lat": 55.722388,
-                    "lng": 37.562041
-                }
-            ],
-            "id": "14866901"
-        },
+        "address": null,
         "response_url": null,
         "sort_point_distance": null,
-        "published_at": "2025-06-30T15:18:50+0300",
-        "created_at": "2025-06-30T15:18:50+0300",
+        "published_at": "2025-07-01T16:37:47+0300",
+        "created_at": "2025-07-01T16:37:47+0300",
         "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122212625",
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=120928670",
+        "show_logo_in_search": null,
         "show_contacts": true,
         "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/122212625?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/122212625",
+        "url": "https://api.hh.ru/vacancies/120928670?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/120928670",
         "relations": [],
         "employer": {
-            "id": "3069555",
-            "name": "Клиника новых медицинских технологий АрхиМед",
-            "url": "https://api.hh.ru/employers/3069555",
-            "alternate_url": "https://hh.ru/employer/3069555",
-            "logo_urls": null,
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3069555",
-            "accredited_it_employer": false,
-            "employer_rating": {
-                "total_rating": "4.4",
-                "reviews_count": 8
-            },
-            "trusted": true
-        },
-        "snippet": {
-            "requirement": "Наличие ученой степени приветствуется. Официально подтвержденный опыт работы в должности <highlighttext>врач</highlighttext>-терапевт (зафиксированный в трудовой книжке) от 3 до 6...",
-            "responsibility": "Амбулаторный прием пациентов: диагностика, лечение, профилактика, консультирование; выявление факторов риска, которые способствуют развитию и прогрессированию неинфекционных болезней. Ведение медицинской документации..."
-        },
-        "contacts": null,
-        "schedule": {
-            "id": "fullDay",
-            "name": "Полный день"
-        },
-        "working_days": [],
-        "working_time_intervals": [],
-        "working_time_modes": [],
-        "accept_temporary": false,
-        "fly_in_fly_out_duration": [],
-        "work_format": [
-            {
-                "id": "ON_SITE",
-                "name": "На месте работодателя"
-            }
-        ],
-        "working_hours": [
-            {
-                "id": "HOURS_8",
-                "name": "8 часов"
-            }
-        ],
-        "work_schedule_by_days": [
-            {
-                "id": "TWO_ON_TWO_OFF",
-                "name": "2/2"
-            }
-        ],
-        "night_shifts": false,
-        "professional_roles": [
-            {
-                "id": "24",
-                "name": "Врач"
-            }
-        ],
-        "accept_incomplete_resumes": false,
-        "experience": {
-            "id": "between3And6",
-            "name": "От 3 до 6 лет"
-        },
-        "employment": {
-            "id": "full",
-            "name": "Полная занятость"
-        },
-        "employment_form": {
-            "id": "FULL",
-            "name": "Полная"
-        },
-        "internship": false,
-        "adv_response_url": null,
-        "is_adv_vacancy": false,
-        "adv_context": null
-    },
-    {
-        "id": "120704867",
-        "premium": false,
-        "name": "Врач УЗИ",
-        "department": null,
-        "has_test": false,
-        "response_letter_required": false,
-        "area": {
-            "id": "1",
-            "name": "Москва",
-            "url": "https://api.hh.ru/areas/1"
-        },
-        "salary": {
-            "from": 229886,
-            "to": null,
-            "currency": "RUR",
-            "gross": true
-        },
-        "salary_range": {
-            "from": 229886,
-            "to": null,
-            "currency": "RUR",
-            "gross": true,
-            "mode": {
-                "id": "MONTH",
-                "name": "За месяц"
-            },
-            "frequency": null
-        },
-        "type": {
-            "id": "open",
-            "name": "Открытая"
-        },
-        "address": {
-            "city": "Москва",
-            "street": "Космодамианская набережная",
-            "building": "22",
-            "lat": 55.743274,
-            "lng": 37.641,
-            "description": null,
-            "raw": "Москва, Космодамианская набережная, 22",
-            "metro": {
-                "station_name": "Новокузнецкая",
-                "line_name": "Замоскворецкая",
-                "station_id": "2.89",
-                "line_id": "2",
-                "lat": 55.742391,
-                "lng": 37.62928
-            },
-            "metro_stations": [
-                {
-                    "station_name": "Новокузнецкая",
-                    "line_name": "Замоскворецкая",
-                    "station_id": "2.89",
-                    "line_id": "2",
-                    "lat": 55.742391,
-                    "lng": 37.62928
-                }
-            ],
-            "id": "11261978"
-        },
-        "response_url": null,
-        "sort_point_distance": null,
-        "published_at": "2025-06-30T11:23:31+0300",
-        "created_at": "2025-06-30T11:23:31+0300",
-        "archived": false,
-        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=120704867",
-        "branding": {
-            "type": "CONSTRUCTOR",
-            "tariff": "BASIC"
-        },
-        "show_logo_in_search": true,
-        "show_contacts": true,
-        "insider_interview": null,
-        "url": "https://api.hh.ru/vacancies/120704867?host=hh.ru",
-        "alternate_url": "https://hh.ru/vacancy/120704867",
-        "relations": [],
-        "employer": {
-            "id": "950",
-            "name": "ФБУН ЦНИИ Эпидемиологии Роспотребнадзора",
-            "url": "https://api.hh.ru/employers/950",
-            "alternate_url": "https://hh.ru/employer/950",
+            "id": "3195028",
+            "name": "Сеть студий массажа лица FaceRoom",
+            "url": "https://api.hh.ru/employers/3195028",
+            "alternate_url": "https://hh.ru/employer/3195028",
             "logo_urls": {
-                "original": "https://img.hhcdn.ru/employer-logo-original/971504.png",
-                "90": "https://img.hhcdn.ru/employer-logo/5506864.png",
-                "240": "https://img.hhcdn.ru/employer-logo/5506865.png"
+                "original": "https://img.hhcdn.ru/employer-logo-original/1128825.jpg",
+                "90": "https://img.hhcdn.ru/employer-logo/6135889.jpeg",
+                "240": "https://img.hhcdn.ru/employer-logo/6135890.jpeg"
             },
-            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=950",
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3195028",
             "accredited_it_employer": false,
             "employer_rating": {
-                "total_rating": "3.6",
-                "reviews_count": 167
+                "total_rating": "4.2",
+                "reviews_count": 38
             },
             "trusted": true
         },
         "snippet": {
-            "requirement": "Высшее профессиональное медицинское образование по специальности «Педиатрия» (предпочтительно) или «Лечебное дело». Послевузовское и (или) дополнительное профессиональное образование по специальности «Ультразвуковая...",
-            "responsibility": "Оказание квалифицированной медицинской помощи по своей специальности. Оказание консультативной помощи <highlighttext>врачам</highlighttext> других подразделений. Обеспечение своевременного и качественного оформления медицинской и..."
+            "requirement": "Обязательно наличие сертификата/диплома: <highlighttext>косметолог</highlighttext>-эстетист! Желателен опыт работы от 1-ого года! Преимуществом будет владение навыков хиро-массажа/массажа...",
+            "responsibility": "Массаж лица: моделирующий, лимфодренажный, пластический, массаж Гуаша и т.д. Проведение уходовых процедур: пилинги, маски, чистки. Консультация клиента по домашней..."
         },
         "contacts": null,
         "schedule": {
@@ -1422,27 +977,467 @@
         ],
         "working_hours": [
             {
-                "id": "HOURS_9",
-                "name": "9 часов"
+                "id": "HOURS_12",
+                "name": "12 часов"
             }
         ],
         "work_schedule_by_days": [
             {
-                "id": "FLEXIBLE",
-                "name": "Свободный"
+                "id": "THREE_ON_THREE_OFF",
+                "name": "3/3"
+            },
+            {
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
             }
         ],
         "night_shifts": false,
         "professional_roles": [
             {
-                "id": "24",
-                "name": "Врач"
+                "id": "56",
+                "name": "Косметолог"
+            }
+        ],
+        "accept_incomplete_resumes": true,
+        "experience": {
+            "id": "noExperience",
+            "name": "Нет опыта"
+        },
+        "employment": {
+            "id": "full",
+            "name": "Полная занятость"
+        },
+        "employment_form": {
+            "id": "FULL",
+            "name": "Полная"
+        },
+        "internship": false,
+        "adv_response_url": null,
+        "is_adv_vacancy": false,
+        "adv_context": null
+    },
+    {
+        "id": "121674896",
+        "premium": false,
+        "name": "Косметолог-эстетист",
+        "department": null,
+        "has_test": false,
+        "response_letter_required": false,
+        "area": {
+            "id": "1",
+            "name": "Москва",
+            "url": "https://api.hh.ru/areas/1"
+        },
+        "salary": {
+            "from": 130000,
+            "to": 180000,
+            "currency": "RUR",
+            "gross": true
+        },
+        "salary_range": {
+            "from": 130000,
+            "to": 180000,
+            "currency": "RUR",
+            "gross": true,
+            "mode": {
+                "id": "MONTH",
+                "name": "За месяц"
+            },
+            "frequency": null
+        },
+        "type": {
+            "id": "open",
+            "name": "Открытая"
+        },
+        "address": {
+            "city": "Москва",
+            "street": "набережная Тараса Шевченко",
+            "building": "3к3",
+            "lat": 55.747692,
+            "lng": 37.568929,
+            "description": null,
+            "raw": "Москва, набережная Тараса Шевченко, 3к3",
+            "metro": {
+                "station_name": "Киевская",
+                "line_name": "Арбатско-Покровская",
+                "station_id": "3.47",
+                "line_id": "3",
+                "lat": 55.743117,
+                "lng": 37.564132
+            },
+            "metro_stations": [
+                {
+                    "station_name": "Киевская",
+                    "line_name": "Арбатско-Покровская",
+                    "station_id": "3.47",
+                    "line_id": "3",
+                    "lat": 55.743117,
+                    "lng": 37.564132
+                },
+                {
+                    "station_name": "Киевская",
+                    "line_name": "Филевская",
+                    "station_id": "4.48",
+                    "line_id": "4",
+                    "lat": 55.743168,
+                    "lng": 37.565425
+                },
+                {
+                    "station_name": "Киевская",
+                    "line_name": "Кольцевая",
+                    "station_id": "5.49",
+                    "line_id": "5",
+                    "lat": 55.74361,
+                    "lng": 37.56735
+                }
+            ],
+            "id": "795952"
+        },
+        "response_url": null,
+        "sort_point_distance": null,
+        "published_at": "2025-07-01T13:15:45+0300",
+        "created_at": "2025-07-01T13:15:45+0300",
+        "archived": false,
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121674896",
+        "show_logo_in_search": null,
+        "show_contacts": true,
+        "insider_interview": null,
+        "url": "https://api.hh.ru/vacancies/121674896?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/121674896",
+        "relations": [],
+        "employer": {
+            "id": "2786655",
+            "name": "Обновление",
+            "url": "https://api.hh.ru/employers/2786655",
+            "alternate_url": "https://hh.ru/employer/2786655",
+            "logo_urls": {
+                "original": "https://img.hhcdn.ru/employer-logo-original/1024611.png",
+                "90": "https://img.hhcdn.ru/employer-logo/5719212.png",
+                "240": "https://img.hhcdn.ru/employer-logo/5719213.png"
+            },
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2786655",
+            "accredited_it_employer": false,
+            "employer_rating": {
+                "total_rating": "5",
+                "reviews_count": 1
+            },
+            "trusted": true
+        },
+        "snippet": {
+            "requirement": "Профессионал с медицинским образованием и опытом работы от 1 года. Вы точно наш человек, если: * Поддержание порядка и готовности рабочего...",
+            "responsibility": "Чётко соблюдаете протоколы и санитарные нормы. * Готовы обучаться и совершенствовать технику. Задачи. * Проведение процедур лазерной эпиляции на александритовом оборудовании. "
+        },
+        "contacts": null,
+        "schedule": {
+            "id": "fullDay",
+            "name": "Полный день"
+        },
+        "working_days": [],
+        "working_time_intervals": [],
+        "working_time_modes": [],
+        "accept_temporary": false,
+        "fly_in_fly_out_duration": [],
+        "work_format": [],
+        "working_hours": [
+            {
+                "id": "HOURS_8",
+                "name": "8 часов"
+            }
+        ],
+        "work_schedule_by_days": [
+            {
+                "id": "OTHER",
+                "name": "Другое"
+            }
+        ],
+        "night_shifts": false,
+        "professional_roles": [
+            {
+                "id": "56",
+                "name": "Косметолог"
+            }
+        ],
+        "accept_incomplete_resumes": true,
+        "experience": {
+            "id": "between1And3",
+            "name": "От 1 года до 3 лет"
+        },
+        "employment": {
+            "id": "full",
+            "name": "Полная занятость"
+        },
+        "employment_form": {
+            "id": "FULL",
+            "name": "Полная"
+        },
+        "internship": false,
+        "adv_response_url": null,
+        "is_adv_vacancy": false,
+        "adv_context": null
+    },
+    {
+        "id": "122212430",
+        "premium": false,
+        "name": "Косметолог-эстетист",
+        "department": null,
+        "has_test": false,
+        "response_letter_required": false,
+        "area": {
+            "id": "53",
+            "name": "Краснодар",
+            "url": "https://api.hh.ru/areas/53"
+        },
+        "salary": {
+            "from": 70000,
+            "to": 150000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "salary_range": {
+            "from": 70000,
+            "to": 150000,
+            "currency": "RUR",
+            "gross": false,
+            "mode": {
+                "id": "MONTH",
+                "name": "За месяц"
+            },
+            "frequency": null
+        },
+        "type": {
+            "id": "open",
+            "name": "Открытая"
+        },
+        "address": {
+            "city": null,
+            "street": null,
+            "building": null,
+            "lat": 45.03540698031786,
+            "lng": 38.97527692839503,
+            "description": null,
+            "raw": "Краснодар, ул.Кубанская набережная, 4",
+            "metro": null,
+            "metro_stations": [],
+            "id": "245632"
+        },
+        "response_url": null,
+        "sort_point_distance": null,
+        "published_at": "2025-06-30T15:16:25+0300",
+        "created_at": "2025-06-30T15:16:25+0300",
+        "archived": false,
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=122212430",
+        "show_logo_in_search": null,
+        "show_contacts": false,
+        "insider_interview": null,
+        "url": "https://api.hh.ru/vacancies/122212430?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/122212430",
+        "relations": [],
+        "employer": {
+            "id": "735436",
+            "name": "Экселленс",
+            "url": "https://api.hh.ru/employers/735436",
+            "alternate_url": "https://hh.ru/employer/735436",
+            "logo_urls": {
+                "original": "https://img.hhcdn.ru/employer-logo-original/960295.jpeg",
+                "90": "https://img.hhcdn.ru/employer-logo/4281696.jpeg",
+                "240": "https://img.hhcdn.ru/employer-logo/4281697.jpeg"
+            },
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=735436",
+            "accredited_it_employer": false,
+            "employer_rating": null,
+            "trusted": true
+        },
+        "snippet": {
+            "requirement": "Среднее медицинское образование. Действующие сертификаты по сестринскому делу, сертификат по сестринской <highlighttext>косметологии</highlighttext>. -Опыт работы по специальности в медицинских учреждениях или...",
+            "responsibility": "Скидки -50% на все обслуживание в клинике «EXCELLENCE»: услуги аппаратной, инъекционной и уходовой <highlighttext>косметологии</highlighttext> по лицу и телу, массажи, СПА..."
+        },
+        "contacts": null,
+        "schedule": {
+            "id": "shift",
+            "name": "Сменный график"
+        },
+        "working_days": [],
+        "working_time_intervals": [],
+        "working_time_modes": [],
+        "accept_temporary": false,
+        "fly_in_fly_out_duration": [],
+        "work_format": [
+            {
+                "id": "ON_SITE",
+                "name": "На месте работодателя"
+            }
+        ],
+        "working_hours": [
+            {
+                "id": "HOURS_12",
+                "name": "12 часов"
+            }
+        ],
+        "work_schedule_by_days": [
+            {
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
+            }
+        ],
+        "night_shifts": false,
+        "professional_roles": [
+            {
+                "id": "64",
+                "name": "Медицинская сестра, медицинский брат"
             }
         ],
         "accept_incomplete_resumes": false,
         "experience": {
-            "id": "between3And6",
-            "name": "От 3 до 6 лет"
+            "id": "between1And3",
+            "name": "От 1 года до 3 лет"
+        },
+        "employment": {
+            "id": "full",
+            "name": "Полная занятость"
+        },
+        "employment_form": {
+            "id": "FULL",
+            "name": "Полная"
+        },
+        "internship": false,
+        "adv_response_url": null,
+        "is_adv_vacancy": false,
+        "adv_context": null
+    },
+    {
+        "id": "121390432",
+        "premium": false,
+        "name": "Косметолог",
+        "department": null,
+        "has_test": false,
+        "response_letter_required": false,
+        "area": {
+            "id": "1",
+            "name": "Москва",
+            "url": "https://api.hh.ru/areas/1"
+        },
+        "salary": {
+            "from": 5000,
+            "to": 7000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "salary_range": {
+            "from": 5000,
+            "to": 7000,
+            "currency": "RUR",
+            "gross": false,
+            "mode": {
+                "id": "SHIFT",
+                "name": "За смену"
+            },
+            "frequency": null
+        },
+        "type": {
+            "id": "open",
+            "name": "Открытая"
+        },
+        "address": {
+            "city": "Москва",
+            "street": "Малый Ивановский переулок",
+            "building": "7-9с1",
+            "lat": 55.753985,
+            "lng": 37.64127,
+            "description": null,
+            "raw": "Москва, Малый Ивановский переулок, 7-9с1",
+            "metro": {
+                "station_name": "Китай-город",
+                "line_name": "Калужско-Рижская",
+                "station_id": "6.50",
+                "line_id": "6",
+                "lat": 55.756498,
+                "lng": 37.631326
+            },
+            "metro_stations": [
+                {
+                    "station_name": "Китай-город",
+                    "line_name": "Калужско-Рижская",
+                    "station_id": "6.50",
+                    "line_id": "6",
+                    "lat": 55.756498,
+                    "lng": 37.631326
+                },
+                {
+                    "station_name": "Китай-город",
+                    "line_name": "Таганско-Краснопресненская",
+                    "station_id": "7.51",
+                    "line_id": "7",
+                    "lat": 55.75436,
+                    "lng": 37.633877
+                }
+            ],
+            "id": "14484795"
+        },
+        "response_url": null,
+        "sort_point_distance": null,
+        "published_at": "2025-06-29T15:39:51+0300",
+        "created_at": "2025-06-29T15:39:51+0300",
+        "archived": false,
+        "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=121390432",
+        "show_logo_in_search": null,
+        "show_contacts": true,
+        "insider_interview": null,
+        "url": "https://api.hh.ru/vacancies/121390432?host=hh.ru",
+        "alternate_url": "https://hh.ru/vacancy/121390432",
+        "relations": [],
+        "employer": {
+            "id": "9750409",
+            "name": "Эпил лаб",
+            "url": "https://api.hh.ru/employers/9750409",
+            "alternate_url": "https://hh.ru/employer/9750409",
+            "logo_urls": {
+                "original": "https://img.hhcdn.ru/employer-logo-original/1435701.png",
+                "90": "https://img.hhcdn.ru/employer-logo/7362442.png",
+                "240": "https://img.hhcdn.ru/employer-logo/7362443.png"
+            },
+            "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9750409",
+            "accredited_it_employer": false,
+            "employer_rating": null,
+            "trusted": true
+        },
+        "snippet": {
+            "requirement": null,
+            "responsibility": null
+        },
+        "contacts": null,
+        "schedule": {
+            "id": "shift",
+            "name": "Сменный график"
+        },
+        "working_days": [],
+        "working_time_intervals": [],
+        "working_time_modes": [],
+        "accept_temporary": false,
+        "fly_in_fly_out_duration": [],
+        "work_format": [],
+        "working_hours": [
+            {
+                "id": "HOURS_12",
+                "name": "12 часов"
+            }
+        ],
+        "work_schedule_by_days": [
+            {
+                "id": "TWO_ON_TWO_OFF",
+                "name": "2/2"
+            }
+        ],
+        "night_shifts": false,
+        "professional_roles": [
+            {
+                "id": "56",
+                "name": "Косметолог"
+            }
+        ],
+        "accept_incomplete_resumes": true,
+        "experience": {
+            "id": "noExperience",
+            "name": "Нет опыта"
         },
         "employment": {
             "id": "full",

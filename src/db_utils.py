@@ -5,22 +5,6 @@ import psycopg2
 from config import config
 
 
-def process_vacancy(vacancy: Dict[str, Any]) -> Dict[str, Any]:
-    """Представление вакансий по конкретным полям"""
-    salary = vacancy.get("salary")
-
-    return {
-        "id": vacancy["id"],
-        "employer_id": vacancy["employer"]["id"],
-        "name": vacancy["name"],
-        "area": vacancy["area"]["name"] if vacancy.get("area") else None,
-        "salary_from": salary["from"] if salary and "from" in salary else None,
-        "salary_to": salary["to"] if salary and "to" in salary else None,
-        "currency": salary["currency"] if salary and "currency" in salary else None,
-        "url": vacancy["alternate_url"],
-    }
-
-
 def insert_employers(vacancies: List[Dict[str, Any]]) -> None:
     """
     Добавляет работодателей в таблицу employers на основе списка вакансий.
