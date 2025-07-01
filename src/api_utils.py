@@ -1,10 +1,11 @@
-import json
-import requests
 from typing import Any, Dict, List, Optional
+
+import requests
+
 from config import USER_AGENT
 
 
-class HeadHunterAPI():
+class HeadHunterAPI:
     """Класс для работы с API HeadHunter.
     Реализует методы подключения и получения вакансий"""
 
@@ -30,7 +31,9 @@ class HeadHunterAPI():
         """Получает список вакансий по ключевому слову с параметрами пагинации и региона"""
         self._connect()
         params = {"text": keyword, "per_page": per_page, "area": area}
-        response = self.__session.get(url=self.__base_url_vacancies, params=params, headers=self.__headers)
+        response = self.__session.get(  # type: ignore
+            url=self.__base_url_vacancies, params=params, headers=self.__headers  # type: ignore
+        )
         if response.status_code != 200:
             raise ConnectionError(f"Ошибка получения вакансий: {response.status_code}")
         data = response.json()
@@ -46,7 +49,9 @@ class HeadHunterAPI():
         if not self.__session:
             self._connect()
         params = {"text": text, "per_page": per_page}
-        response = self.__session.get(url=self.__base_url_employers, params=params, headers=self.__headers)
+        response = self.__session.get(  # type: ignore
+            url=self.__base_url_employers, params=params, headers=self.__headers  # type: ignore
+        )
         response.raise_for_status()
         data = response.json()
         return data.get("items", [])

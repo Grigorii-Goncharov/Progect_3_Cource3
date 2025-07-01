@@ -1,6 +1,5 @@
-
 from src.api_utils import HeadHunterAPI
-from src.db_utils import  insert_employers, insert_vacancies, clear_employees_table, clear_vacancies_table
+from src.db_utils import insert_employers, insert_vacancies, clear_employees_table, clear_vacancies_table
 from src.database import create_database, create_tables
 from src.db_manager import DBManager
 
@@ -8,7 +7,7 @@ from src.db_manager import DBManager
 def user_interface(text):
     if text == 'да':
         api = HeadHunterAPI()
-        user_input = input("Введите название вакансии(например, 'Puthon-разработчик или врач'): ").lower()
+        user_input = input("Введите название вакансии(например, 'Python-разработчик или врач'): ").lower()
         print(f"Осуществляю подключение к hh.ru ...\n")
         try:
             # Шаг 1: получаем список вакансий по ключевому слову
@@ -82,19 +81,16 @@ def user_interface(text):
 
 
 if __name__ == "__main__":
-        create_database()
-        create_tables()
-        clear_employees_table()
-        clear_vacancies_table()
+    create_database()
+    create_tables()
+    clear_employees_table()
+    clear_vacancies_table()
 
-        while True:
-            user_question = input("\nПолучить вакансии из топ 10 компаний: Да/Нет? ").strip().lower()
-            if user_question in ['да','нет']:
-                break
-            else:
-                print('Введите только "Да" или "Нет"!')
+    while True:
+        user_question = input("\nПолучить вакансии из топ 10 компаний: Да/Нет? ").strip().lower()
+        if user_question in ['да', 'нет']:
+            break
+        else:
+            print('Введите только "Да" или "Нет"!')
 
-        user_interface(user_question)
-
-
-
+    user_interface(user_question)

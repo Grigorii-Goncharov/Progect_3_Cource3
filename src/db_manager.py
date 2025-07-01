@@ -1,5 +1,7 @@
+from typing import Any, List, Optional, Tuple
+
 import psycopg2
-from typing import List, Tuple, Optional, Any
+
 from config import config
 
 
@@ -12,28 +14,30 @@ class DBManager:
         with self.conn.cursor() as cur:
             cur.execute(
                 """
-            SELECT employees.name, COUNT(vacancies.id) 
-            FROM employees
-            LEFT JOIN vacancies ON employees.id_company = vacancies.employer_id
-            GROUP BY employees.name
-            """)
+                SELECT employees.name, COUNT(vacancies.id)
+                FROM employees
+                LEFT JOIN vacancies ON employees.id_company = vacancies.employer_id
+                GROUP BY employees.name
+                """
+            )
             return cur.fetchall()
 
     def get_all_vacancies(self) -> List[Tuple[Any, ...]]:
         """Получает список всех вакансий с указанием названия компании,
-         названия вакансии и зарплаты и ссылки на вакансию"""
+        названия вакансии и зарплаты и ссылки на вакансию"""
+
         with self.conn.cursor() as cur:
             cur.execute(
                 """
                 SELECT employees.name,
-                 vacancies.name,
-                  vacancies.salary_from,
-                   vacancies.salary_to,
-                    vacancies.currency,
-                     vacancies.url
+                       vacancies.name,
+                       vacancies.salary_from,
+                       vacancies.salary_to,
+                       vacancies.currency,
+                       vacancies.url
                 FROM vacancies
                 JOIN employees ON employees.id_company = vacancies.employer_id
-            """
+                """
             )
             return cur.fetchall()
 
@@ -42,10 +46,10 @@ class DBManager:
         with self.conn.cursor() as cur:
             cur.execute(
                 """
-                SELECT AVG((salary_from + salary_to)/2) 
-                FROM vacancies 
+                SELECT AVG((salary_from + salary_to)/2)
+                FROM vacancies
                 WHERE salary_from IS NOT NULL AND salary_to IS NOT NULL
-            """
+                """
             )
             result = cur.fetchone()
             return result[0] if result else None
@@ -60,7 +64,7 @@ class DBManager:
                 WHERE (salary_from + salary_to)/2 > %s
                   AND salary_from IS NOT NULL
                   AND salary_to IS NOT NULL
-            """,
+                """,
                 (avg_salary,),
             )
             return cur.fetchall()
@@ -73,7 +77,7 @@ class DBManager:
                 SELECT id, name, salary_from, salary_to, currency, url
                 FROM vacancies
                 WHERE name ILIKE %s
-            """,
+                """,
                 (f"%{keyword}%",),
             )
             return cur.fetchall()

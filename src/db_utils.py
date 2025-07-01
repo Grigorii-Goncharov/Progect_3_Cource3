@@ -1,6 +1,8 @@
+from typing import Any, Dict, List
+
 import psycopg2
+
 from config import config
-from typing import Dict, Any, Optional, List
 
 
 def process_vacancy(vacancy: Dict[str, Any]) -> Dict[str, Any]:
@@ -50,9 +52,7 @@ def insert_employers(vacancies: List[Dict[str, Any]]) -> None:
             )
 
         except Exception as e:
-            print(
-                f" Ошибка при добавлении работодателя из вакансии {vac.get('id')}: {e}"
-            )
+            print(f" Ошибка при добавлении работодателя из вакансии {vac.get('id')}: {e}")
 
     conn.commit()
     cur.close()
@@ -61,7 +61,7 @@ def insert_employers(vacancies: List[Dict[str, Any]]) -> None:
 
 def insert_vacancies(vacancies: List[Dict[str, Any]]) -> None:
     """Добавляет вакансии работодателей в таблицу vacancies на основе списка работодателей."""
-    conn = psycopg2.connect(**config()) # type: ignore
+    conn = psycopg2.connect(**config())  # type: ignore
     cur = conn.cursor()
 
     for vac in vacancies:  # Перебор каждого работодателя
@@ -71,16 +71,12 @@ def insert_vacancies(vacancies: List[Dict[str, Any]]) -> None:
                 print(f"Пропущена вакансия {vac['id']} — нет данных о работодателе")
                 continue
 
-            employer_id = employer[
-                "id"
-            ]  # получаем ID работодателя для проверки на дубли
+            employer_id = employer["id"]  # получаем ID работодателя для проверки на дубли
 
             # Проверяем, существует ли работодатель в БД
             cur.execute("SELECT 1 FROM employees WHERE id_company = %s", (employer_id,))
             if cur.fetchone() is None:
-                print(
-                    f"Пропущена вакансия {vac['id']} — работодатель {employer_id} не найден в БД"
-                )
+                print(f"Пропущена вакансия {vac['id']} — работодатель {employer_id} не найден в БД")
                 continue
 
             # Вставляем вакансию
@@ -94,21 +90,9 @@ def insert_vacancies(vacancies: List[Dict[str, Any]]) -> None:
                     vac["id"],
                     employer_id,
                     vac["name"],
-                    (
-                        vac["salary"]["from"]
-                        if vac.get("salary") and vac["salary"].get("from")
-                        else None
-                    ),
-                    (
-                        vac["salary"]["to"]
-                        if vac.get("salary") and vac["salary"].get("to")
-                        else None
-                    ),
-                    (
-                        vac["salary"]["currency"]
-                        if vac.get("salary") and vac["salary"].get("currency")
-                        else None
-                    ),
+                    (vac["salary"]["from"] if vac.get("salary") and vac["salary"].get("from") else None),
+                    (vac["salary"]["to"] if vac.get("salary") and vac["salary"].get("to") else None),
+                    (vac["salary"]["currency"] if vac.get("salary") and vac["salary"].get("currency") else None),
                     vac["alternate_url"],
                 ),
             )
@@ -122,7 +106,7 @@ def insert_vacancies(vacancies: List[Dict[str, Any]]) -> None:
 
 
 def clear_employees_table() -> None:
-    conn = psycopg2.connect(**config()) # type: ignore
+    conn = psycopg2.connect(**config())  # type: ignore
     cur = conn.cursor()
     cur.execute("TRUNCATE TABLE employees CASCADE")
     conn.commit()
